@@ -1,0 +1,110 @@
+.orders{
+    &__box{
+        border-radius: 10px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        margin-bottom: 41px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &-info{
+            @include for-desktop{
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 20px;
+                row-gap: 10px;
+            }
+        }
+        &-top{
+            min-height: 53px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #EFF3F9;
+            padding: 15px 19px;
+            row-gap: 20px;
+            flex-wrap: wrap;
+            &-left{
+                display: flex;
+                align-items: center;
+            }
+            &-title{
+                margin-right: 36px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+                
+            }
+            &-code{
+                color: #437FC8;
+                font-weight: 500;
+            }
+            &-right{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+        &-content{
+            padding: 36px 20px 20px 20px;
+            min-height: 184px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            gap: 15px;
+            @include for-desktop{
+                flex-wrap: wrap;
+            }
+        }
+        &-status{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+            color: #FFFFFF;
+            background-color: #55BB9F;
+            border-radius: 2px;
+            max-width: 189px;
+            padding: 3px 10px;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        &-delivery-type{
+            font-weight: 500;
+            margin-bottom: 19px;
+        }
+        &-delivery-date{
+            font-size: 14px;
+            line-height: 18px;
+            color: #6E6E6E;
+        }
+        &-pay-type{
+            font-size: 14px;
+            line-height: 18px;
+            color: #6E6E6E;
+        }
+        &-slider{
+            max-width: 500px;
+            margin: 0 auto;
+            .slick-arrow{
+                @include for-desktop{
+                    top: 65%;
+                }
+            }
+            @include for-desktop{
+                .slick-list, .slick-slider {
+                    position: initial;
+                }
+            }
+            @include for-tablet-landscape-min{
+                max-width: 450px;
+            }
+            @include for-tablet-portrait{
+                max-width: 280px;
+            }
+            @media (max-width: 400px) {
+                max-width: 200px;
+            }
+        }
+    }
+}

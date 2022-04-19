@@ -1,0 +1,85 @@
+.reviews{
+    &__waiting{
+        border-radius: 10px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        margin-bottom: 70px;
+        position: relative;
+        &-top{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;           
+            min-height: 53px;
+            background-color: #EFF3F9;
+            padding: 15px 19px;
+        }
+    }
+    &__slider{
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 20px 0 20px 20px;
+        .slick-list, .slick-slider {
+            position: initial;
+        }
+        .slick-next{
+            right: 20px;
+        }
+        .slick-prev{
+            left: 20px;
+        }
+        @include for-desktop{
+            max-width: 500px;
+        }
+        @include for-tablet-portrait{
+            max-width: 300px;
+        }
+        @media (max-width: 400px) {
+            max-width: 200px;
+        }
+    }
+    &__rated{
+        padding-top: 41px;
+        border-top: 1px solid #E5E5E5;
+        &-item{
+            margin-bottom: 40px;
+            &-top{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            &-box{
+                display: flex;
+            }
+        }
+        &-img{
+            width: 93px;
+            height: 93px;
+            object-fit: contain;
+        }
+        &-date{
+            font-size: 12px;
+            line-height: 25px;
+            color: #9F9F9F;
+            margin-bottom: 7px;
+        }
+        &-title{
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-comment{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: #353535;
+            padding-left: 93px;
+            margin-top: -20px;
+            max-width: 790px;
+            @include for-phone{
+                margin-top: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}

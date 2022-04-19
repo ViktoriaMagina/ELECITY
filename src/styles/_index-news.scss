@@ -1,0 +1,126 @@
+.index-news{
+    margin-bottom: 86px;
+    &__list{
+        color: #fff;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "A B C C"
+        "A D E F";
+        @include for-tablet-landscape{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "A B"
+            "A D"
+            "C C"
+            "E F";
+        }
+        @include for-phone{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "A A"
+            "B B"
+            "C C"
+            "D D"
+            "E E"
+            "F F";
+        }
+    }
+    &__item{
+        position: relative;
+        border-radius: 5px;
+        &:hover{
+            .index-news__item-title{
+                transform: translateY(-50%);
+            }
+        }
+        &-one{
+            grid-area: A;
+            height: 516px;
+            background: linear-gradient(15.37deg, #142840 5.12%, #1A467C 91.24%);
+            &:hover{
+                .index-news__item-title{
+                    transform: none;
+                }
+            }
+            @include for-phone{
+                height: 224px;
+            }
+            .index-news__item-img{
+                object-fit: contain;
+                max-width: 305px;
+                width: auto;
+                height: 224px;
+                position: absolute;
+                bottom: 56px;
+                left: 0px;
+                @include for-tablet-landscape{
+                    bottom: 10px;
+                }
+                @include for-phone{
+                    display: none;
+                }
+            }
+            .index-news__item-title{
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .index-news__item-box{
+                align-items: flex-start;
+                flex-direction: column;
+                padding-top: 50px;
+                background: none;
+                @include for-phone{
+                    max-width: 300px;
+                    padding-top: 20px;
+                }
+            }
+        }
+        &-two{
+            grid-area: B;
+        }
+        &-three{
+            grid-area: C;
+        }
+        &-four{
+            grid-area: D;
+        }
+        &-five{
+            grid-area: E;
+        }
+        &-six{
+            grid-area: F;
+        }
+        &-img{
+            object-fit: cover;
+            height: 248px;
+            width: 100%;
+        }
+        &-inner{
+            border-radius: 5px;
+        }
+        &-box{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: linear-gradient(1.56deg, #282828 3.05%, rgba(30, 30, 30, 0) 98.13%);
+            display: flex;
+            align-items: flex-end;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        &-title{
+            font-weight: 600;
+            font-size: 15px;
+            transition: transform .3s ease-in-out;
+        }
+        &-text{
+            z-index: 1;
+        }
+    }
+}

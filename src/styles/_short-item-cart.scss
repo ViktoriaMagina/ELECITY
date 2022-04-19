@@ -1,0 +1,129 @@
+.short-item-cart{
+    width: 100%;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 153px;
+    @include for-desktop {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    &__img{
+        height: 153px;
+        max-width: 130px;
+        width: 100%;
+        flex: 0 0 auto;
+        margin-right: 10px;
+        @include for-desktop {
+            max-width: 200px;
+        }
+        img{
+            height: inherit;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__box{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    &__info{
+        margin-bottom: 17px;
+    }
+    &__title{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+    &__code{
+        font-size: 14px;
+        line-height: 22px;
+        color: #6E6E6E;
+    }
+    &__service{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        span{
+            margin-right: 10px;
+        }
+    }
+    &__select{
+        border: 1px solid #C4C4C4;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #404040;
+        background-color: transparent;    
+        padding: 6px 14px;  
+    }
+    &__counter{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 25px;
+        width: 130px;
+        margin: 0 10px;
+        .cart-counter__btn-minus,
+        .cart-counter__btn-plus{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid #C4C4C4;
+            background-color: #fff;
+            color: #6E6E6E;
+        }
+        .cart-counter__num{
+            margin: 0 17px;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0 10px;
+        flex:  0 0 auto;
+        @include for-desktop {
+            width: 100%;
+            flex-direction: row;
+        }
+    }
+    &__now-price{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: #404040;
+        @include for-desktop {
+            margin-right: 20px;
+        }
+    }
+    &__old-price{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;
+        color: #6E6E6E;
+        @include for-desktop {
+            margin-right: 20px;
+        }
+    }
+    &__delite{
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 22px;
+        color: #437FC8;
+        position: relative;
+        padding-left: 20px;
+        background-color: transparent;
+        &::before{
+            content: url('../img/cart/delete-icon.svg');
+            position: absolute;
+            left: 0;
+        }
+        @include for-desktop {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.index-catalog{
+    margin-bottom: 86px;
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 34px;
+        @include for-desktop{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include for-tablet-landscape-min{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include for-phone{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__column{
+        &-list{
+            margin-bottom: 10px;
+        }
+        &-title{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        &-item{
+            color: #404040;
+            font-size: 15px;
+            line-height: 30px;
+            margin-bottom: 5px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        &-more{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #437FC8;
+            position: relative;
+            padding-right: 40px;
+            &::after{
+                position: absolute;
+                right: 0;
+                content: url('../img/icons/Arrow-all.svg')
+            }
+        }
+    }
+}

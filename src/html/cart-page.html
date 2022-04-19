@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elecity</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <!--Header-->
+  @@include('parts/_header.html')
+  <!--/Header-->
+  <div class="wrapper" id="wrapper">
+    <main class="main">
+        <div class="breadcrumps">
+            <div class="container">
+                <div class="breadcrumps__inner">
+                    <a target="_blank" class="breadcrumps__item" href="index.html">Главная</a>/ 
+                    <span class="breadcrumps__item breadcrumps__item--now"> Корзина</span>
+                </div>
+            </div>
+        </div>
+      <section class="cart-page">
+          <div class="container">
+              <div class="cart-page__inner">
+                  <h1 class="cart-page__title h1-title">Корзина</h1>
+                  <div class="cart-page__content">
+                    <div class="cart-page__list">
+                        <div class="cart-page__item short-item-cart">
+                            <div class="short-item-cart__img">
+                                <img src="img/content/popular/3.png" alt="Холодильник Electrolux EWH 80 Formax">
+                            </div>
+                            <div class="short-item-cart__box">
+                                <div class="short-item-cart__info">
+                                    <h3 class="short-item-cart__title">Холодильник Electrolux EWH 80 Formax</h3>
+                                    <p class="short-item-cart__code">Код товара: 519868.0</p>
+                                </div>
+                                <div class="short-item-cart__service">
+                                    <span>Дополнительный сервис</span>
+                                    <select class="short-item-cart__select">
+                                        <option value="" selected disabled hidden>Выберите</option>
+                                        <option>нет</option>
+                                        <option>1 год (+1130 ₽)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="short-item-cart__counter cart-counter">
+                                <button class="cart-counter__btn-minus" data-counter="minus">-</button>
+                                <span class="cart-counter__num" data-num-count>1</span>
+                                <button class="cart-counter__btn-plus" data-counter="plus">+</button>
+                            </div>
+                            <div class="short-item-cart__right">
+                                <span class="short-item-cart__now-price">14 300 ₽</span>
+                                <s class="short-item-cart__old-price">18 000 ₽</s>
+                                <button class="short-item-cart__delite" data-del-item>Удалить</button>
+                            </div>
+                        </div>
+                        <div class="cart-page__item short-item-cart">
+                            <div class="short-item-cart__img">
+                                <img src="img/cart/item-1.png" alt="Холодильник Electrolux EWH 80 Formax">
+                            </div>
+                            <div class="short-item-cart__box">
+                                <div class="short-item-cart__info">
+                                    <h3 class="short-item-cart__title">Холодильник Electrolux EWH 80 Formax</h3>
+                                    <p class="short-item-cart__code">Код товара: 519868.0</p>
+                                </div>
+                                <div class="short-item-cart__service">
+                                    <span>Дополнительный сервис</span>
+                                    <select class="short-item-cart__select">
+                                        <option value="" selected disabled hidden>Выберите</option>
+                                        <option>нет</option>
+                                        <option>1 год (+1130 ₽)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="short-item-cart__counter cart-counter">
+                                <button class="cart-counter__btn-minus" data-counter="minus">-</button>
+                                <span class="cart-counter__num" data-num-count>1</span>
+                            <button class="cart-counter__btn-plus" data-counter="plus">+</button>
+                            </div>
+                            <div class="short-item-cart__right">
+                                <span class="short-item-cart__now-price">14 300 ₽</span>
+                                <s class="short-item-cart__old-price">18 000 ₽</s>
+                                <button class="short-item-cart__delite" data-del-item>Удалить</button>
+                            </div>
+                        </div>
+                        <div class="cart-page__item short-item-cart">
+                            <div class="short-item-cart__img">
+                                <img src="img/cart/item-1.png" alt="Холодильник Electrolux EWH 80 Formax">
+                            </div>
+                            <div class="short-item-cart__box">
+                                <div class="short-item-cart__info">
+                                    <h3 class="short-item-cart__title">Холодильник Electrolux EWH 80 Formax</h3>
+                                    <p class="short-item-cart__code">Код товара: 519868.0</p>
+                                </div>
+                                <div class="short-item-cart__service">
+                                    <span>Дополнительный сервис</span>
+                                    <select class="short-item-cart__select">
+                                        <option value="" selected disabled hidden>Выберите</option>
+                                        <option>нет</option>
+                                        <option>1 год (+1130 ₽)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="short-item-cart__counter cart-counter">
+                                <button class="cart-counter__btn-minus" data-counter="minus">-</button>
+                                <span class="cart-counter__num" data-num-count>1</span>
+                            <button class="cart-counter__btn-plus" data-counter="plus">+</button>
+                            </div>
+                            <div class="short-item-cart__right">
+                                <span class="short-item-cart__now-price">14 300 ₽</span>
+                                <s class="short-item-cart__old-price">18 000 ₽</s>
+                                <button class="short-item-cart__delite" data-del-item>Удалить</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="cart-page__total">
+                          <div class="cart-page__total-top">
+                              <span>Итого</span>
+                              <span class="cart-page__total-price" id="total-price">42 900 ₽</span>
+                          </div>
+                          <div class="cart-page__total-box">
+                              <div class="cart-page__total-box-item cart-page__total-box-item--counter">
+                                  <span>Товаров, <span id="total-num-items">3</span> шт</span>
+                                  <span id="total-num-price">65 900 ₽</span>
+                              </div>
+                              <div class="cart-page__total-box-item cart-page__total-box-item--sale">
+                                  <span>Скидка</span>
+                                  <span id="total-sale">15 000 ₽</span>
+                              </div>
+                              <div class="cart-page__total-box-item cart-page__total-box-item--delivery">
+                                  <span>Доставка</span>
+                                  <span id="total-delivery">бесплатно</span>
+                              </div>
+                          </div>
+                          <div class="cart-page__total-delivery">
+                              <span class="cart-page__total-delivery-text">Доставка</span>
+                              <div class="cart-page__total-delivery-date">04.02.2021<span>10:00-18:00</span></div>
+                          </div>
+                          <button form="cart-page" type="submit" class="cart-page__total-btn">Оформить заказ</button>
+                      </div>
+                  </div>
+                  <form id="cart-page" class="cart-page__form">
+                      <div class="cart-page__delivery">
+                        <h3 class="cart-page__delivery-title h1-title">Способ доставки</h3>
+                        <div class="cart-page__delivery__box">
+                            <label class="cart-page__delivery-item cart-page__delivery-item--courier">
+                                <input data-delivery="courier" type="radio" class="cart-page__delivery-checkbox" name="delivery-choose">
+                                <span class="cart-page__delivery-checkbox-fake"></span>
+                                <p class="cart-page__delivery-text">Доставка курьером</p>
+                                <div class="cart-page__delivery-calendar">
+                                    <input type="date">
+                                </div>
+                            </label>
+                            <label class="cart-page__delivery-item cart-page__delivery-item--pickup">
+                              <input data-delivery="pickup" type="radio" class="cart-page__delivery-checkbox" name="delivery-choose">
+                              <span class="cart-page__delivery-checkbox-fake"></span>
+                              <p class="cart-page__delivery-text">Самовывоз</p>
+                              <div class="cart-page__delivery-calendar">
+                                <input type="date">
+                              </div>
+                            </label>
+                            <label class="cart-page__delivery-item cart-page__delivery-item--adress">
+                              <input data-adress type="radio" class="cart-page__delivery-checkbox" name="delivery-adress">
+                              <span class="cart-page__delivery-checkbox-fake"></span>
+                              <p class="cart-page__delivery-text">г. Минск, ул. Набережная 28, пом 54</p>
+                            </label>
+                            <label class="cart-page__delivery-item cart-page__delivery-item--adress">
+                              <input data-adress type="radio" class="cart-page__delivery-checkbox" name="delivery-adress">
+                              <span class="cart-page__delivery-checkbox-fake"></span>
+                              <p class="cart-page__delivery-text">г. Минск, ул. Набережная 28, пом 54</p>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="cart-page__pay">
+                          <h3 class="cart-page__pay-title h1-title">Способ оплаты</h3>
+                          <div class="cart-page__pay-box">
+                            <label class="cart-page__pay-item cart-page__pay-item--online">
+                                <input type="radio" class="cart-page__pay-checkbox" name="payment">
+                                <span class="cart-page__pay-checkbox-fake"></span>
+                                <p class="cart-page__pay-text">Оплата онлайн</p>
+                            </label>
+                            <label class="cart-page__pay-item cart-page__pay-item--cash">
+                              <input type="radio" class="cart-page__pay-checkbox" name="payment">
+                              <span class="cart-page__pay-checkbox-fake"></span>
+                              <p class="cart-page__pay-text">Оплата при получении картой</p>
+                          </label>
+                          <label class="cart-page__pay-item cart-page__pay-item--card">
+                              <input type="radio" class="cart-page__pay-checkbox" name="payment">
+                              <span class="cart-page__pay-checkbox-fake"></span>
+                              <p class="cart-page__pay-text">Оплата при получении наличными</p>
+                          </label>
+                          </div>
+                      </div>
+                      <div class="cart-page__contacts">
+                          <h3 class="cart-page__contacts-title h1-title">Контактные данные</h3>
+                          <div class="cart-page__contacts-content">
+                              <div class="cart-page__contacts-box">
+                                  <div class="cart-page__contacts-column">
+                                      <label class="cart-page__contacts-column-item cart-page__contacts-column-item--tel">
+                                          <span class="cart-page__contacts-column-text">Телефон</span>
+                                          <input type="text" class="cart-page__contacts-column-input">
+                                      </label>
+                                      <label class="cart-page__contacts-column-item cart-page__contacts-column-item--name">
+                                        <span class="cart-page__contacts-column-text">Имя</span>
+                                        <input type="text" class="cart-page__contacts-column-input">
+                                    </label>
+                                    <label class="cart-page__contacts-column-item cart-page__contacts-column-item--city">
+                                        <span class="cart-page__contacts-column-text">Город</span>
+                                        <input type="text" class="cart-page__contacts-column-input">
+                                    </label>
+                                  </div>
+                                  <div class="cart-page__contacts-column">
+                                    <label class="cart-page__contacts-column-item cart-page__contacts-column--email">
+                                        <span class="cart-page__contacts-column-text">Email</span>
+                                        <input type="text" class="cart-page__contacts-column-input">
+                                    </label>
+                                    <label class="cart-page__contacts-column-item cart-page__contacts-column--middlename">
+                                      <span class="cart-page__contacts-column-text">Фамилия</span>
+                                      <input type="text" class="cart-page__contacts-column-input">
+                                  </label>
+                                  <label class="cart-page__contacts-column-item cart-page__contacts-column--adress">
+                                      <span class="cart-page__contacts-column-text">Адрес</span>
+                                      <input type="text" class="cart-page__contacts-column-input">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="cart-page__contacts-services">
+                                  <label class="cart-page__contacts-services-item cart-page__contacts-services-item--lift">
+                                    <input type="radio" class="cart-page__contacts-services-checkbox" name="services">
+                                    <span class="cart-page__contacts-services-checkbox-fake"></span>
+                                    <p class="cart-page__contacts-services-text">Нужен подъем</p>
+                                  </label>
+                                  <label class="cart-page__contacts-services-item cart-page__contacts-services-item--installation">
+                                    <input type="radio" class="cart-page__contacts-services-checkbox" name="services">
+                                    <span class="cart-page__contacts-services-checkbox-fake"></span>
+                                    <p class="cart-page__contacts-services-text">Нужна установка</p>
+                                  </label>
+                                  <label class="cart-page__contacts-services-item cart-page__contacts-services-item--recycling">
+                                    <input type="radio" class="cart-page__contacts-services-checkbox" name="services">
+                                    <span class="cart-page__contacts-services-checkbox-fake"></span>
+                                    <p class="cart-page__contacts-services-text">Нужна утилизация</p>
+                                  </label>
+                              </div>
+                              <div class="cart-page__contacts-comment">
+                                  <span class="cart-page__contacts-comment-text">Комментарий</span>
+                                  <textarea class="cart-page__contacts-comment-textarea"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  </div>
+              </div>
+      </section>
+    </main>
+      <!--Footer-->
+      @@include('parts/_footer.html')
+      <!--/Footer-->
+  </div>
+  <script src="./js/libs/jquery-3.6.0.min.js"></script>
+  <script src="./js/libs/slick.min.js"></script>
+  <script src="./js/libs/jquery.magnific-popup.min.js"></script>
+  <script src="./js/cart-page.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

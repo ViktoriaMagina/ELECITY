@@ -1,0 +1,93 @@
+.profile-section{
+    .personal-account{
+        &__user{
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            @include for-desktop{
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+            @include for-tablet-landscape{
+                display: block;
+            }
+        }
+        &__wrapper{
+            align-items: flex-end;
+            @include for-desktop{
+                flex-wrap: wrap;
+            }
+            @include for-tablet-landscape{
+                flex-direction: column;
+            }
+        }
+    }
+    .user-info{
+        margin-top: 20px;
+        &__box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__item{
+            width: 48%;
+            @include for-phone {
+                width: 100%;
+            }
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 35px;
+            color: #999999;
+        }
+        &__now{
+            font-size: 18px;
+            line-height: 35px;
+            color: #404040;
+            margin-bottom: 10px;
+        }
+        &__btn{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: #437FC8;
+            position: relative;
+            padding-left: 23px;
+            &::before{
+                content: url('../img/orders/pencil-icon.svg');
+                position: absolute;
+                left: 0;
+            }
+        }
+
+    }
+    .change-telephone{
+        max-width: 363px;
+        &__form{
+            &-item{
+                margin-bottom: 20px;
+            }
+            &-text{
+                display: block;
+                font-size: 14px;
+                line-height: 35px;
+                color: #999999;
+            }
+            &-input{
+                border: 1px solid #C4C4C4;
+                border-radius: 5px;
+                background-color: #fff;
+                height: 46px;
+                padding: 10px;
+                width: 100%;
+            }
+            &-btn{
+                margin-top: 26px;
+                width: 213px;
+            }
+        }
+    }
+}

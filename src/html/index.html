@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elecity</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <!--Header-->
+  @@include('parts/_header.html')
+  <!--/Header-->
+  <div class="wrapper" id="wrapper">
+    <main class="main">
+      <div class="container">
+      <!--Slider-->
+      @@include('parts/_index-slider.html')
+      <!--/Slider-->
+      <!--Index-content-->
+      @@include('parts/_index-content.html')
+      <!--/Index-content-->
+      <!--Index-catalog-->
+      @@include('parts/_index-catalog.html')
+      <!--/Index-catalog-->
+      <!--Index-news-->
+      @@include('parts/_index-news.html')
+      <!--/Index-news-->
+      <!--Article-index-->
+      @@include('parts/_article-index.html')
+      <!--/Article-index-->
+      <!--Footer-icons-->
+      @@include('parts/_footer-icons.html')
+      <!--/Footer-icons-->
+      </div>
+    </main>
+      <!--Footer-->
+      @@include('parts/_footer.html')
+      <!--/Footer-->
+  </div>
+  <script src="./js/libs/jquery-3.6.0.min.js"></script>
+  <script src="./js/libs/slick.min.js"></script>
+  <script src="./js/libs/jquery.magnific-popup.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

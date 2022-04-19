@@ -1,0 +1,50 @@
+.index-content{
+    margin-bottom: 100px;
+    &__banner{
+        margin: 50px 0;
+        color: #fff;
+        &-inner{
+            width: 100%;
+            min-height: 294px;
+            background-color: #142840;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 37px 20px 37px 37px;
+            @include for-tablet-landscape{
+                flex-direction: column-reverse;
+            }
+        }
+        &-title{
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 1.1;
+            margin-bottom: 35px;
+            @include for-phone{
+               font-size: 40px;
+            }
+        }
+        &-text{
+            font-size: 30px;
+            line-height: 1.2;
+            &-price{
+                margin-left: 5px;
+            }
+            @include for-phone{
+               font-size: 20px;
+            }
+        }
+        &-img{
+            object-fit: contain;
+            max-width: 500px;
+            width: inherit;
+            height: 260px;
+            margin-left: 30px;
+            flex: 1 1 auto;
+            @include for-phone{
+                margin-left: 0;
+            }
+        }
+    }
+}

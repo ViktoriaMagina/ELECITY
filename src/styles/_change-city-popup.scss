@@ -1,0 +1,35 @@
+.change-city{
+	max-width: 494px;
+	width: 100%;
+	min-height: 492px;
+	padding: 37px 27px;
+	&-popup{
+		&__title{
+			margin-bottom: 20px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		&__input{
+			width: 100%;
+			border: 1px solid #E5E5E5;
+			border-radius: 5px;
+			margin-bottom: 24px;
+			padding: 9px 10px;
+			&::placeholder{
+				font-size: 16px;
+				line-height: 25px;
+				color: #999999;
+			}
+		}
+		&__list{
+			height: 300px;
+			overflow-y: auto;
+		}
+		&__item{
+			margin-bottom: 13px;
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+}

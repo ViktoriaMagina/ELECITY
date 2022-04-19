@@ -1,0 +1,32 @@
+.fast-view-popup{
+    .full-item{
+        padding: 40px;
+        @include for-phone {
+            padding: 20px 10px;
+        }
+    }
+    .full-item__content{
+        margin-bottom: 20px;
+    }
+    .full-item__slider {
+        max-height: 500px;
+        margin: 0 auto;
+    }
+    .full-item__slider-big-item {
+        height: 500px;
+        @include for-tablet-portrait{
+            height: 350px;
+        }
+    }
+    .full-item__info {
+        margin: 0 auto;
+    }
+    .full-item__info-more{
+        max-width: 329px;
+        width: 100%;
+        height: 59px;
+        line-height: 59px;
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+}

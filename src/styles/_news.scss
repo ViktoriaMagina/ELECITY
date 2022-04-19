@@ -1,0 +1,77 @@
+.news{
+    &__line{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 70px;
+        @include for-tablet-landscape{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include for-phone{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &--one-type{
+            .news__item-link{
+                width: 100%;
+                min-height: 248px;
+                display: block;
+            }
+            .news__item-img{
+                object-fit: cover;
+                margin-bottom: 18px;
+                height: 248px;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .news__item-title{
+                font-weight: 600;
+                font-size: 18px;
+                color: #404040;
+                margin-bottom: 10px;
+            }
+            .news__item-text{
+                font-size: 15px;
+                color: #404040;
+            }
+        }
+        &--two-type{
+            .news__item{
+                &:hover{
+                    .news__item-title{
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .news__item-link{
+                width: 100%;
+                height: 248px;
+                display: block;
+                position: relative;
+            }
+            .news__item-img{
+                object-fit: cover;
+                width: 100%;
+                height: inherit;
+                border-radius: 5px;
+            }
+            .news__item-title{
+                font-size: 15px;
+                color: #fff;
+                font-weight: 600;
+                padding: 0 10px 20px 10px;
+                transition: transform .3s ease-in-out;
+            }
+            .news__item-box{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background: linear-gradient(1.56deg, rgba(40, 40, 40, 0.78) 3.05%, rgba(30, 30, 30, 0) 98.13%);
+                border-radius: 5px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+}

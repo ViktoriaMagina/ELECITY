@@ -1,0 +1,53 @@
+.log-account{
+    width: 583px;
+    min-height: 396px;
+    padding: 38px 66px;
+    &-popup{
+        &__title{
+            margin-bottom: 43px;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+        }
+        &__text{
+            margin-bottom: 18px;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+        }
+        &__input{
+            width: 100%;
+			border: 1px solid #E5E5E5;
+			border-radius: 5px;
+			margin-bottom: 15px;
+			padding: 9px 10px;
+			&::placeholder{
+				font-size: 16px;
+				line-height: 25px;
+				color: #999999;
+			}
+        }
+        &__status{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        &__buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        &__replay{
+            width: 225px;
+            height: 54px;
+            line-height: 54px;
+        }
+        &__further{
+            width: 225px;
+            height: 54px;
+            line-height: 54px;
+        }
+    }
+}

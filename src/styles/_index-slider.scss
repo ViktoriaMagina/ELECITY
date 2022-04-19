@@ -1,0 +1,156 @@
+.index-slider{
+    margin-top: 15px;
+    margin-bottom: 70px;
+    .slick-arrow{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include for-tablet-landscape{
+            bottom: 50px;
+            top: inherit;
+            transform: none;
+        }
+    }
+    .slick-prev{
+        left: 13px;
+        @include for-tablet-landscape{
+            left: inherit;
+            right: 97px;
+        }
+    }
+    .slick-next{
+        right: 13px;
+        @include for-tablet-landscape{
+            right: 33px;
+        }
+    }
+    .index-slider__dots{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 24px;
+        z-index: 3;
+            li{
+                margin-right: 8px;
+                font-size: 0;
+            }
+            li button{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid #FFFFFF;
+                background-color: transparent;
+                display: block;
+
+            }
+            li.slick-active button{
+                background-color: #fff;
+            }
+    }
+    &__inner{
+        position: relative;
+        height: 461px;
+        background-image: url('../img/slider/slider-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        @include for-tablet-landscape{
+            height: auto;
+        }
+    }
+    &__items{
+        height: 461px;
+        @include for-tablet-landscape{
+            height: auto;
+        }
+    }
+    &__item{
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            @include for-tablet-landscape{
+                flex-direction: column-reverse;
+                padding-bottom: 60px;
+            }
+            @include for-phone{
+                padding: 20px 20px 120px 20px;
+            }
+        }
+        &-box{
+            max-width: 600px;
+            margin-right: 30px;
+            @include for-tablet-landscape{
+                margin-top: 20px;
+                margin-right: 0;
+            }
+        }
+        &-title{
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 1.1;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+            @include for-desktop{
+                font-size: 35px;
+            }
+            @include for-tablet-portrait{
+                font-size: 25px;
+            }
+            @include for-phone{
+                font-size: 20px;
+            }
+        }
+        &-text{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.1;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+            @include for-tablet-portrait{
+                font-size: 20px;
+            }
+            @include for-phone{
+                font-size: 15px;
+            }
+        }
+        &-button{
+            padding: 16px 45px;
+            background-color: #FFFFFF;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 2.2;
+            color: rgba(28, 80, 143, 0.95);
+        }
+        &-img{
+            margin: 0 auto;
+            max-width: 630px;
+            width: auto;
+            height: 390px;
+            object-fit: contain;
+            @include for-big-desktop{
+                max-width: 400px;
+            }
+            @include for-tablet-portrait{
+                max-width: 300px;
+                height: 280px;
+            }
+            @include for-phone{
+                max-width: 250px;
+            }
+        }
+    }
+}

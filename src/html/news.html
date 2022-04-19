@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elecity</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <!--Header-->
+  @@include('parts/_header.html')
+  <!--/Header-->
+  <div class="wrapper" id="wrapper">
+    <main class="main">
+        <div class="breadcrumps">
+            <div class="container">
+                <div class="breadcrumps__inner">
+                    <a target="_blank" class="breadcrumps__item" href="#">Главная</a>/ 
+                    <span class="breadcrumps__item breadcrumps__item--now"> Новости и обзоры</span>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="container">
+                <div class="news__inner">
+                    <div class="news__content">
+                        <div class="news__top">
+                        <!--index-news-->
+                        @@include('parts/_index-news.html')
+                        <!--/index-news-->
+                        </div>
+                        <div class="news__box">
+                            <ul class="news__line news__line--one-type">
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <span class="news__item-title">Эффективная уборка без лишних проводов</span>
+                                            <p class="news__item-text">Обзор на Робот-пылесос Xiaomi Mi Robot Vacuum Cleaner</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <span class="news__item-title">Эффективная уборка без лишних проводов</span>
+                                            <p class="news__item-text">Обзор на Робот-пылесос Xiaomi Mi Robot Vacuum Cleaner</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <span class="news__item-title">Эффективная уборка без лишних проводов</span>
+                                            <p class="news__item-text">Обзор на Робот-пылесос Xiaomi Mi Robot Vacuum Cleaner</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <span class="news__item-title">Эффективная уборка без лишних проводов</span>
+                                            <p class="news__item-text">Обзор на Робот-пылесос Xiaomi Mi Robot Vacuum Cleaner</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="news__line news__line--two-type">
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="../img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <p class="news__item-title">Эффективная уборка без лишних проводов</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="../img/news/news-free-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <p class="news__item-title">Эффективная уборка без лишних проводов</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="../img/news/news-two-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <p class="news__item-title">Эффективная уборка без лишних проводов</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news__item">
+                                    <a class="news__item-link" target="_blank" href="news-page.html">
+                                        <img class="news__item-img" src="../img/news/news-five-bg.jpg" alt="Эффективная уборка без лишних проводов">
+                                        <div class="news__item-box">
+                                            <p class="news__item-title">Эффективная уборка без лишних проводов</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+      <!--Footer-->
+      @@include('parts/_footer.html')
+      <!--/Footer-->
+  </div>
+  <script src="./js/libs/jquery-3.6.0.min.js"></script>
+  <script src="./js/libs/slick.min.js"></script>
+  <script src="./js/libs/jquery.magnific-popup.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
