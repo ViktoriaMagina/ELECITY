@@ -7,7 +7,7 @@
 * [contacts](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/contacts.html)
 * [deferred-list](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/deferred-list.html)
 * [documentation](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/documentation.html)
-* [full-item](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/full-item .html)
+* [full-item](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/full-item.html)
 * [index](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/index.html)
 * [installation](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/installation.html)
 * [news-page](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/news-page.html)
