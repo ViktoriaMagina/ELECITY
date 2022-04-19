@@ -24,69 +24,7 @@
         justify-content: space-between;
         position: relative;
     }
-    &__aside{
-        width: 337px;
-        margin-right: 40px;
-        display: flex;
-        flex-direction: column;
-        @include for-tablet-landscape-min{
-            position: absolute;
-            transform: translateX(-200%);
-            padding: 50px 30px 30px 30px;
-            background-color: #ffffff;
-            z-index: 10;
-            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
-        }
-        @include for-phone{
-            padding: 50px 30px 10px 10px;
-        }
-        &.active{
-            transform: translateX(0%);
-            width: 100%;
-        }
-        .maker,
-        .view-fridge,
-        .freezer-compartment{
-            &__list-item{
-                display:flex;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-            &__checkbox{
-                margin-right: 7px
-            }
-            &__link-all{
-                font-size: 13px;
-                line-height: 35px;
-                color: #404040;
-                border: 1px solid #CECECE;
-                border-radius: 3px;
-                text-align: center;
-                position: relative;
-                display: block;
-                &::after{
-                    position: absolute;
-                    content: url('../img/icons/Arrow-all-grey.svg');
-                    margin-left: 10px;
-                    top: 0;
-                }
-            }
-        }
-        &-close{
-            display: none;
-            width: 22px;
-            height: 22px;
-            object-fit: contain;
-            position: absolute;
-            top: 16px;
-            right: 22px;
-            cursor: pointer;
-            @include for-tablet-landscape-min{
-                display: block;
-            }
-        }
 
-    }
     &__catalog{
         max-width: 1015px;
         flex: 1 1 auto;
@@ -100,14 +38,7 @@
         &-list{
             display: grid;
             gap: 30px;
-            grid-template-columns: repeat(3, 1fr);
             margin-bottom: 35px;
-            @include for-tablet-landscape-min{
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @include for-tablet-portrait{
-                grid-template-columns: repeat(1, 1fr);
-            }
             .short-item{
                 margin: 10px auto;
             }
@@ -136,7 +67,13 @@
             @include for-desktop{
                 grid-template-columns: repeat(2, 1fr);
             }
-            @include for-tablet-portrait{
+            @include for-tablet-landscape{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            @include for-tablet-landscape-min{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include for-phone{
                 grid-template-columns: repeat(1, 1fr);
             }
         }
@@ -312,141 +249,6 @@
             }
         }
     }
-    .category__widget{
-        margin-bottom: 40px;
-        &-title{
-            font-weight: 500;
-            font-size: 16px;
-            position: relative;
-            line-height: 35px;
-            &::after{
-                position: absolute;
-                content: url('../img/icons/arrow-page-nav-bottom.svg');
-                right: 0;
-                width: 9px;
-                height: 7px;
-            }
-            &.active{
-                &::after{
-                    transform: rotate(180deg) translateY(50%);
-                    top: 100%;
-                }
-            }
-        }
-        &-more{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 35px;
-            color: #437FC8;
-            text-align: center;
-            margin-bottom: 40px;
-            display: inline-block;
-            width: 100%;
-        }
-        &-bottom{
-            display: flex;
-            align-items: center;
-            background-color: #E5E5E5;
-            border-radius: 5px;
-            height: 63px;
-        }
-        &-res{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 63px;
-            color: #404040;
-            border-right: 1px solid #999999;
-            width: 100%;
-            text-align: center;
-        }
-        &-clear{
-            border-radius: 5px;
-            width: 63px;
-            height: 63px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 1;
-            img{
-                object-fit: cover;
-            }
-        }
-        .price,
-        .volume,
-        .height{
-        &__range{
-            position: relative;
-            margin: 20px 0;
-            height: 23px;
-        }
-        &__line{
-            position: absolute;
-            left: 0;
-            width: 100%;
-            background-color: #E5E5E5;;
-            height: 2px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        &__active-line{
-            position: absolute;
-            left: 10%;
-            top: 50%;
-            width: 80%;
-            height: 2px;
-            background-color: #7FB1ED;;
-            z-index: 5;
-            transform: translateY(-50%);
-        }
-        &__min-num,
-        &__max-num{
-            position: absolute;
-            background-color: #FFFFFF;
-            border: 3px solid #7FB1ED;
-            border-radius: 50%;
-            width: 23px;
-            height: 23px;
-            z-index: 10;
-            top: 0;
-            cursor: pointer;
-        }
-        &__min-num{
-            left: 10%;
-        }
-        &__max-num{
-            right: 10%;
-        }
-        &__box{
-            display: flex;
-            align-items: center;
-            font-size: 15px;
-            line-height: 1;
-            color: #6E6E6E;
-            input[type="text"]{
-                background-color: transparent;
-                border: 1px solid #D4D4D4;
-                border-radius: 5px;
-                max-width: 98px;
-                padding: 9px 5px;
-                text-align: center;
-                font-size: 15px;
-                line-height: 1;
-                color: #6E6E6E;
-            }
-            span{
-                margin-left: 39px;
-                margin-right: 10px;
-            }
-        }
-        }
-        .price__box,
-        .volume__box{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            column-gap: 10px;
-        }
-    
-    }
+
 }
 

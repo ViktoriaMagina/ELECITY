@@ -55,6 +55,7 @@
         display: flex;
         align-items: flex-start;
         z-index: 5;
+        margin-top: 5px;
         &-compare{
             cursor: pointer;
             width: 20px;
@@ -88,6 +89,7 @@
         &:hover{
             .short-item__fast-view-link{
                 visibility: visible;
+                opacity: 1;
             }
         }
     }
@@ -117,6 +119,8 @@
             padding: 9px 16px;
             z-index: 4;
             visibility: hidden;
+            opacity: 0;
+            transition: visibility .2s ease-in-out, opacity .2s ease-in-out;
         }
         @include for-tablet-landscape-min{
             display: none;
@@ -159,6 +163,7 @@
         }
     }
     &__title{
+        transition: color .2s ease-in-out;
         &:hover{
             color: #437FC8;
         }
@@ -183,7 +188,7 @@
         width: 115px;
         height: 40px;
         font-size: 15px;
-        line-height: 40px;
+        line-height: 37px;
     }
 }
 .short-list{

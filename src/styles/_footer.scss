@@ -49,6 +49,12 @@
             &-item{
                 margin-bottom: 16px;
             }
+            &-link{
+                transition: color .2s ease;
+                &:hover{
+                    color: #729cce;
+                }
+            }
             &-telegram{
                 width: 26px;
                 height: 27px;

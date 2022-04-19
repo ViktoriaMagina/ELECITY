@@ -32,20 +32,24 @@ const paths ={
         dest: 'public/',
     },
     styles: {
-        src: 'src/styles/**/*',
+        src: 'src/styles/**/*.+(scss|css)',
         dest: 'public/css/',
     },
     scripts: {
-        src: 'src/scripts/**/*',
+        src: 'src/scripts/**/*.js',
         dest: 'public/js/',
     },
     img: {
-        src: 'src/img/**/*',
+        src: 'src/img/**/*.+(png|svg|jpg|jpeg|gif)',
         dest: 'public/img/',
     },
     fonts: {
         src: 'src/font/**/*',
         dest: 'public/font/',
+    },
+    favicon: {
+        src: 'src/favicon.+(ico|png|svg)',
+        dest: 'public/',
     },
 }
 
@@ -92,6 +96,13 @@ const img = () => {
         .pipe(dest(paths.img.dest))
         .pipe(browserSync.stream())
 }
+
+//Обработка favicon
+const favicon = () => {
+    return src(paths.favicon.src)
+        .pipe(dest(paths.favicon.dest))
+}
+
 //Обработка Шрифтов
 const font = () => {
     return src(paths.fonts.src)
@@ -137,7 +148,7 @@ exports.server = server;
 
 //Сборка в режиме разработки
 exports.start = series(
-    parallel(html, img, scss, js, font),
+    parallel(html, img, scss, js, font, favicon),
     parallel(watcher, server)
 )
 //Сборка в режиме production

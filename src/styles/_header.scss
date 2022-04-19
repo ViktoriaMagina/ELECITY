@@ -94,6 +94,10 @@
         cursor: pointer;
         position: relative;
         margin-right: 50px;
+        transition: color .2s ease-in-out;
+        &:hover{
+            color: #729cce;
+        }
         &::before{
             content: url('../img/icons/pin-header.svg');
             position: absolute;
@@ -129,15 +133,31 @@
                 }
             }
         }
+        &-2{
+            &-text{
+                transition: color .2s ease-in-out;
+                &:hover{
+                    color: #729cce;
+                }
+            }
+        }
         &-item,
         &-item-2{
             font-size: 13px;
             line-height: 1.23;
             margin-right: 20px;
+            &-link{
+                transition: color .2s ease-in-out;
+                &:hover{
+                    color: #729cce;
+                }
+            }
         }
     }
     &__user{
         margin-left: 50px;
+        display: flex;
+        align-items: center;
         @include for-tablet-landscape{
             margin: 0;
             display: none;
@@ -170,12 +190,16 @@
             margin-right: 9px;
             position: relative;
             padding-left: 29px;
+            transition: color .2s ease-in-out;
             &::before{
                 width: 17px;
                 height: 17px;
                 position: absolute;
                 content: url('../img/icons/user-header.svg');
                 left: 0;
+            }
+            &:hover{
+                color: #FC413C;
             }
         }
     }
@@ -324,6 +348,12 @@
             line-height: 1;
         }
         &-item{
+            a{
+                transition: color .2s ease-in-out;
+                &:hover{
+                    color: #729cce;
+                }
+            }
             span{
                 display: block;
                 font-size: 12px;
@@ -522,6 +552,10 @@
         align-items: center;
         flex: 0 0 auto;
         cursor: pointer;
+        transition: opacity .3s ease-in-out;
+        &:hover{
+            opacity: .7;
+        }
         &-icon{
             width: 23px;
             height: 15px;
@@ -565,6 +599,12 @@
         &-item{
             @include for-big-desktop{
                 display: none;
+            }
+        }
+        &-link{
+            transition: color .2s ease-in-out;
+            &:hover{
+                color: #729cce;
             }
         }
         @include for-tablet-landscape-min{
@@ -716,7 +756,11 @@
             height: 35px;
             a{
                 display: block;
-                padding-left: 28px;;
+                padding-left: 28px;
+                transition: color .2s ease-in-out;
+                &:hover{
+                    color: #729cce;
+                }
             }
             &.active{
                 a{
@@ -785,6 +829,10 @@
                 }
             }
             &-link{
+                transition: color .2s ease-in-out;
+                &:hover{
+                    color: #729cce;
+                }
                 span{
                     margin-left: 15px;
                 }
