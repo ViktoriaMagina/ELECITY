@@ -15,3 +15,7 @@
 * orders
 * profile
 * rewiews
+
+Ссылка на GitHub Pages: 
+[Elecity](https://viktoriamagina.github.io/VictoriaMagina.github.io/Elecity/index.html)
+
